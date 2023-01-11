@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Text To Speech</title>
+</head>
+<body>
+    <center><div><h1 class="headertxt"> TEXT TO SPEECH </h1></div>
+    <div class="maindiv">
+        <div class="div2">
+            <button class="clearbtn" id="clearbtn">X</button>
+        </div>
+        <div class="textdiv">
+            <textarea class="textarea" id="textarea" name="username" cols="80" rows="22" placeholder="Enter Your Text Here..."></textarea>
+            <br>
+        </div>
+        <div class="btns">
+            <select onchange="getvala(this)" id="customvoice" class="selected1">
+                <option value="1">Voice</option>
+            </select>
+            <button class="submitbtn" id="submitbtn" >Play</button>
+            <select onchange="getval(this)" id="selected" class="selected2">
+                <option value="1">Spreed</option>
+                <option value="0.25">0.25</option>
+                <option value="0.5">0.5</option>
+                <option value="0.75">0.75</option>
+                <option value="1">1</option>
+                <option value="1.2">1.25</option>
+                <option value="1.5">1.5</option>
+                <option value="1.75">1.75</option>
+                <option value="2">2</option>
+            </select>
+        </div>
+    </div>
+    
+    
+    </center>
+    <script src="app.js"></script>
+</body>
+</html>
