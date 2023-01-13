@@ -9,7 +9,8 @@ const playButton = document.getElementById("submitbtn");
 if ('speechSynthesis' in window) {
     // console.log("Speech Synthesis is supported 🎉")
 
-    const voices = window.speechSynthesis.getVoices();
+    const voice = window.speechSynthesis.getVoices();
+    const voicess = window.speechSynthesis.getVoices();
 
     let mainvoice = 1;
     window.onload = function() {
